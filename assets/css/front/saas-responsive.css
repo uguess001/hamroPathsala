@@ -1,0 +1,167 @@
+/* Large Layout: 1400px. */
+@media only screen and (max-width: 1400px) {
+    .container-big {
+        max-width: 1200px;
+    }
+}
+
+/* Medium Layout: 1367px. */
+@media only screen and (max-width: 1367px) {
+    header .logo img {
+        height: 70px;
+    }
+    header .stellarnav.light ul li a {
+        padding: 40px 12px;
+    }
+}
+
+
+/* Medium Layout: 1280px. */
+@media only screen and (max-width: 1199px) {
+    header .logo img {
+        height: 44px;
+    }
+    header .stellarnav.light ul li a {
+        padding: 30px 8px;
+        font-size: 14px;
+    }
+    .single-carousel .img {
+        height: 530px;
+    }
+    .single-carousel .content .title {
+        font-size: 46px;
+        line-height: 56px;
+    }
+    .hero-carousel .owl-nav .owl-prev {
+        margin-right: 30px;
+    }
+    .section-title h4 {
+        font-size: 26px;
+        line-height: 30px;
+    }
+    .section-title h2 {
+        font-size: 34px;
+        line-height: 38px;
+    }
+    .single-pricing ul {
+        padding: 0 10px;
+    }
+    .single-feature {
+        min-height: auto;
+        height: calc(100% - 30px);
+    }
+    .single-feature .title {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .single-feature .count {
+        font-size: 60px;
+        line-height: 56px;
+    }
+    .contact-info .info li {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .contact-input-box input[type="submit"] {
+        font-size: 18px;
+        line-height: 22px;
+        height: 50px;
+    }
+    .footer-widget .title {
+        font-size: 20px;
+        line-height: 24px;
+        margin: 0 0 24px;
+        padding: 0 0 10px;
+    }
+    .footer-widget p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+    li {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .footer-widget ul li {
+        margin-bottom: 12px;
+    }
+    .footer-widget ul li a {
+        font-size: 14px;
+    }
+    .footer-widget iframe {
+        height: 300px;
+    }
+    .copyright p {
+        font-size: 16px;
+        line-height: 20px
+    }
+}
+
+
+/* Tablet Layout: 768px. */
+
+@media only screen and (max-width: 991px) {
+    header {
+        background: transparent;
+        overflow-x: hidden;
+    }
+    header .stellarnav.light {
+        background: transparent;
+        text-align: right;
+        padding: 10px 0 0;
+    }
+    header .stellarnav.light ul li a {
+        text-align: left;
+        color: #000000;
+    }
+    .single-carousel .content {
+        min-width: 80%;
+    }
+    .hero-carousel .owl-nav {
+        bottom: 30px;
+        right: 30px;
+    }
+}
+
+
+/* Wide Mobile Layout: 480px. */
+
+@media only screen  and (max-width: 767px) {
+    .single-carousel .img {
+        height: 400px;
+    }
+    .single-carousel .content {
+        min-width: 95%;
+    }
+    .single-carousel .content .title {
+        font-size: 34px;
+        line-height: 44px;
+    }
+    .hero-carousel .owl-nav {
+        display: none;
+    }
+    .accordion .card .card-header h2 button {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .contact-info {
+        padding: 26px 20px;
+    }
+    .section-title h2 {
+        font-size: 26px;
+        line-height: 30px;
+    }
+    .single-review {
+        padding: 20px;
+    }
+    .single-review p {
+        font-size: 18px;
+    }
+    .single-review h4 {
+        margin: 30px 0 0;
+    }
+}
+/* Small Mobile Layout: 480px. */
+
+@media only screen  and (max-width: 480px) {
+
+}

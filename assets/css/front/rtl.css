@@ -1,0 +1,119 @@
+html {
+    direction: rtl;
+}
+header .ht-right {
+    text-align: left;
+}
+header .ht-left {
+    text-align: right;
+}
+.apply-box .apply a {
+    padding: 0 0 0 34px;
+}
+.apply-box .apply a .icon {
+    margin-left: 20px;
+    margin-right: 0;
+}
+.page-header-content .links li {
+    margin-left: 26px;
+    margin-right: 0;
+}
+.page-header-content .links li::after {
+    left: -24px;
+    right: auto;
+}
+.news-search-content .single.button {
+    text-align: left;
+}
+.pcia-info .title img {
+    margin-right: 0;
+    margin-left: 4px;
+}
+.sidebar-widget .title img {
+    margin-right: 0;
+    margin-left: 4px;
+}
+.gallery-menu .button:last-child {
+    margin-right: 16px;
+}
+.gallery-menu .button:first-child {
+    margin-right: 0;
+}
+.single-event {
+    text-align: right;
+}
+.single-news {
+    text-align: right;
+}
+footer {
+    text-align: right;
+}
+.sidebar-widget {
+    text-align: right;
+}
+.sidebar-widget .sw-single-news .content {
+    padding: 0 12px 0 0;
+}
+.news-details-content {
+    text-align: right;
+}
+.single-holiday {
+    text-align: right;
+}
+.single-notice {
+    text-align: right;
+}
+.single-teacher {
+    text-align: right;
+}
+
+.footer-widget .links li{
+    direction: rtl;
+    margin-right: 15px;
+}
+.footer-widget .links li a::before{
+    direction: rtl;
+    left: auto;
+    margin-right: -15px;
+}
+
+.footer-widget .hours li{
+   padding-right: 15px;
+   font-size: 14px;
+}
+.footer-widget .hours li .what-time {
+    float: left;
+}
+.footer-widget .hours li:before{
+    direction: rtl;
+    left: auto;  
+    margin-right: -15px;
+}
+
+.single-notice .top-head .for, .news-details-content .top-head .for {
+   border-radius: 50px 0px 0px 50px;
+}
+
+.single-holiday .holiday span, .news-details-content .holiday span{
+    float: right;
+    direction: rtl;
+}
+
+.admission-form-title{
+    text-align: right;
+    padding-right: 10px;
+}
+
+label, .field-title {   
+    float: right;
+    direction: rtl;
+}
+
+@media only screen and (max-width: 991px) {
+    header .stellarnav.light {
+        text-align: left;
+    }
+    header .logo {
+        text-align: right;
+    }
+}
