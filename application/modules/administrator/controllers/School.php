@@ -182,6 +182,7 @@ class School extends MY_Controller {
         $this->form_validation->set_rules('currency_symbol', $this->lang->line('currency_symbol'), 'trim|required');
         $this->form_validation->set_rules('language', $this->lang->line('language'), 'trim|required');
         $this->form_validation->set_rules('theme_name', $this->lang->line('theme'), 'trim|required');
+        
         $this->form_validation->set_rules('footer', $this->lang->line('footer'), 'trim');
         $this->form_validation->set_rules('logo', $this->lang->line('admin_logo'), 'trim|callback_logo'); 
         $this->form_validation->set_rules('frontend_logo', $this->lang->line('frontend_logo'), 'trim|callback_frontend_logo'); 
@@ -306,7 +307,7 @@ class School extends MY_Controller {
         $items[] = 'registration_date';
         $items[] = 'footer';
         $items[] = 'google_map';
-        $items[] = 'theme_name';
+        // $items[] = 'theme_name';
         $items[] = 'language';
         $items[] = 'enable_online_admission';
         $items[] = 'enable_rtl';
@@ -325,9 +326,10 @@ class School extends MY_Controller {
             $data['modified_at'] = date('Y-m-d H:i:s');
             $data['modified_by'] = logged_in_user_id();
         } else {
-            
+            // slate-gray
             $data['about_text'] = 'Lorem ipsum dolor sit amet, consecte- tur adipisicing elit, We create Premium WordPress themes & plugins for more than three years. ';
             $data['status'] = 1;
+            $data['theme_name'] = 'slate-gray';
             $data['created_at'] = date('Y-m-d H:i:s');
             $data['created_by'] = logged_in_user_id();
             $data['subscription_id'] = '1';
@@ -339,7 +341,7 @@ class School extends MY_Controller {
         if ($_FILES['frontend_logo']['name']) {
             $data['frontend_logo'] = $this->_upload_frontend_logo();
         }
-
+// _d($data);
         return $data;
     }
     

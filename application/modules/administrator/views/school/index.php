@@ -260,7 +260,7 @@
                                         </div>
                                     </div>
                                     <div class="col-md-3 col-sm-3 col-xs-12">
-                                        <div class="item form-group">
+                                        <div class="item form-group hidden">
                                             <label for="theme_name"><?php echo $this->lang->line('theme'); ?> <span class="required">*</span></label>
                                             <select class="form-control col-md-7 col-xs-12" name="theme_name" required="required">
                                                 <option value="">--<?php echo $this->lang->line('select'); ?>--</option>
@@ -872,13 +872,13 @@
 
     $("#add").validate();
     $("#edit").validate();
-    $('#school_name').change(function() {
-        debugger;
-        var slug = this.value;
-        slug = slug.toLowerCase().replace(/[^\w-]+/g, '-');
-        console.log(slug);
-        $("#school_url").val(function() {
-            return this.value = slug;
-        });
-    });
+$('#school_name').change(function() {
+debugger;
+var slug = this.value;
+slug = slug.toLowerCase().replace(/[^\w-]+/g, '-');
+console.log(slug);
+$("#school_url").val(function() {
+    return this.value = slug;
+});
+});
 </script>
