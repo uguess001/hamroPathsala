@@ -165,7 +165,7 @@ class Setting extends CI_Controller {
                     // now nsert purchase code
                     $data = array();
                     $data['id']  = 1;
-                    $data['purchase_code']   = 1;                   
+                    $data['purchase_code']   = $this->input->post('purchase_code');                   
                     $data['modified_at'] = date('Y-m-d H:i:s');
                     $data['modified_by'] = 1;      
                     $data['created_at'] = date('Y-m-d H:i:s');

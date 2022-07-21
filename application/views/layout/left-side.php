@@ -98,7 +98,7 @@
                                     <li><a href="<?php echo site_url('administrator/payment/index'); ?>"><?php echo $this->lang->line('payment_setting'); ?></a></li>
                                 <?php } ?>
                                 <?php if (has_permission(VIEW, 'administrator', 'sms')) { ?>
-                                    <li><a href="<?php echo site_url('administrator/sms/index'); ?>"><?php echo $this->lang->line('sms_setting'); ?></a></li>
+                                    <li class="hidden"><a href="<?php echo site_url('administrator/sms/index'); ?>"><?php echo $this->lang->line('sms_setting'); ?></a></li>
                                 <?php } ?>
                                 <?php if (has_permission(VIEW, 'administrator', 'emailsetting')) { ?>
                                     <li><a href="<?php echo site_url('administrator/emailsetting/index'); ?>"><?php echo $this->lang->line('email_setting'); ?></a></li>
