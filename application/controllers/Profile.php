@@ -42,7 +42,7 @@ class Profile extends My_Controller {
         
         if ($role_id != SUPER_ADMIN) {
             $school_id = $this->session->userdata('school_id');
-            $school = $this->profile->get_school_by_id($school_id);
+            $school = $this->profile->get_school_by_id($school_id); 
             $academic_year_id = $school->academic_year_id;
         }
         

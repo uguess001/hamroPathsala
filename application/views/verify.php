@@ -32,8 +32,6 @@
                 <center>
                     <?php  if(UPLOAD_PATH.'logo/'.$this->global_setting->brand_logo){ ?>
                         <img  src="<?php echo UPLOAD_PATH.'logo/'.$this->global_setting->brand_logo; ?>" style="max-width: 100px;" alt="">
-                    <?php }else{ ?>
-                        <img  width="100" height="100" src="<?php echo IMG_URL; ?>/sms-logo.png">
                     <?php } ?>
                 </center>
             </section>
