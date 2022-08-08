@@ -18,22 +18,22 @@
                 <?php echo form_open($this->uri->uri_string(), array('name' => 'dbform', 'id' => 'dbform', 'class' => 'form-horizontal form-label-left'), ''); ?>
                 <div class="form-group">
                     <label for="hostname">MySQL Hostname</label>
-                    <input type="text" class="form-control required" name="hostname" autocomplete="off" />
+                    <input type="text" class="form-control required" name="hostname" autocomplete="off" value="localhost"/>
                 </div>
                 <div class="form-group">
                     <label for="database">Database Name</label>
-                    <input type="text" class="form-control required" name="dbname" autocomplete="off">
+                    <input type="text" class="form-control required" name="dbname" autocomplete="off" value="baatcheet_hamropathsala">
                 </div>
                 <div class="form-group">
                     <label for="username">Database Username</label>
-                    <input type="text" class="form-control required" name="username" autocomplete="off">
+                    <input type="text" class="form-control required" name="username" autocomplete="off" value="baatcheet_root">
                 </div>
                 <div class="form-group">
                     <label for="password">Database Password</label>
-                    <input type="text" class="form-control" name="password" autocomplete="off">
+                    <input type="password" class="form-control" name="password" autocomplete="off" value="7DC?A(O%aC$%">
                 </div>
                 <div class="text-right">
-                    <input type="hidden" name="purchase_code" id="purchase_code" value="<?php echo $purchase_code; ?>" />
+                    <input type="hidden" name="purchase_code" id="purchase_code" value="SCHOOL123!@hhs2" />
                     <input type="hidden" name="superadmin" id="superadmin" value="superadmin" />
                     <button type="submit" class="btn btn-primary">Go Next</button>
                 </div>

@@ -48,9 +48,10 @@ class Verify extends CI_Controller {
                     }                 
                 }
                
-                $this->verify->verify($data['purchase_code']);                
+                $this->verify->verify($data['purchase_code']);    
+                            
                 sleep(5);                
-                redirect('auth/login');         
+                $this->load->view('verify');       
                 
             }else{
                 $this->session->set_flashdata('error', $this->lang->line('insert_failed'));

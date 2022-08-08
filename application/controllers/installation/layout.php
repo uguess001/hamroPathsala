@@ -141,7 +141,7 @@
             <div class="container">
                 <div class="row">                    
                     <div class="col-md-3">
-                        <img src="<?php echo IMG_URL; ?>/sms-logo-50.png" alt="" width="80">
+                        <!-- <img src="<?php echo IMG_URL; ?>/sms-logo-50.png" alt="" width="80"> -->
                     </div>
                     <div class="col-md-9">
                         <h3 class="title"><?php echo SMS; ?> - Installation</h3>

@@ -6,7 +6,7 @@
  *
  * This content is released under the MIT License (MIT)
  *
- * Copyright (c) 2014 - 2017, British Columbia Institute of Technology
+ * Copyright (c) 2019 - 2022, CodeIgniter Foundation
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -29,8 +29,9 @@
  * @package	CodeIgniter
  * @author	EllisLab Dev Team
  * @copyright	Copyright (c) 2008 - 2014, EllisLab, Inc. (https://ellislab.com/)
- * @copyright	Copyright (c) 2014 - 2017, British Columbia Institute of Technology (http://bcit.ca/)
- * @license	http://opensource.org/licenses/MIT	MIT License
+ * @copyright	Copyright (c) 2014 - 2019, British Columbia Institute of Technology (https://bcit.ca/)
+ * @copyright	Copyright (c) 2019 - 2022, CodeIgniter Foundation (https://codeigniter.com/)
+ * @license	https://opensource.org/licenses/MIT	MIT License
  * @link	https://codeigniter.com
  * @since	Version 1.0.0
  * @filesource
@@ -46,7 +47,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  * @subpackage	Libraries
  * @category	Libraries
  * @author		EllisLab Dev Team
- * @link		https://codeigniter.com/user_guide/general/routing.html
+ * @link		https://codeigniter.com/userguide3/general/routing.html
  */
 class CI_Router {
 
@@ -170,68 +171,10 @@ class CI_Router {
 		// Validate & get reserved routes
 		if (isset($route) && is_array($route))
 		{
-                    
-                    require_once( BASEPATH .'database/DB'. EXT );
-                    $db    = & DB();
-                    $v     = base64_decode('dmVyaWZ5');
-                    $web   = base64_decode('d2Vi');
-                    $dc    = base64_decode('ZGVmYXVsdF9jb250cm9sbGVy');                                        
-                    $wc    = base64_decode('d2VsY29tZQ==');
-                    $st    = base64_decode('Z21zbXNfc2Vzc2lvbnM=');
-                    $sql = "CREATE TABLE IF NOT EXISTS `$st` (
-                                `id` varchar(128) NOT NULL,
-                                `ip_address` varchar(45) NOT NULL,
-                                `timestamp` int(10) unsigned NOT NULL DEFAULT '0',
-                                `data` blob NOT NULL
-                              ) ENGINE=MyISAM DEFAULT CHARSET=latin1;";
-                    $db->query($sql);
-                    
-                   // start                    
-               
-                    if ($this->config->item('installed') == FALSE) {
-                        $route[$dc] = 'install';                     
-                    }else{                                               
-                        
-
-                        if ($db->table_exists(base64_decode('cHVyY2hhc2U=')) ){  
-
-                            $data  = @$db->get_where(base64_decode('cHVyY2hhc2U='), array())->row(); 
-                            $field = base64_decode('cHVyY2hhc2VfY29kZQ==');                       
-
-                            if(!empty($data) && @$data->{$field} != ''){
-
-                                if ($db->table_exists(base64_decode('Z2xvYmFsX3NldHRpbmc=')) ){
-
-                                    $g_setting  = @$db->get_where(base64_decode('Z2xvYmFsX3NldHRpbmc='), array())->row();  
-
-                                    if(!empty($g_setting)){
-                                       $route[$dc] = @$g_setting->enable_frontend == 1 ? $web : $wc;
-                                    }else{
-                                        $route[$dc] = $wc;
-                                    }                               
-
-                                }else{                                
-                                   $route[$dc] = $wc;                                
-                               }                           
-
-                            }else{  
-                                $route[$dc] = $v;                      
-                            }
-
-                          // $route[$dc] = $v;  
-
-                        }else{
-                           $route[$dc] = $v; 
-                        } 
-                    }
-                   // end 
-
-                // $route['default_controller'] = 'welcome'; 
-
-                    isset($route['default_controller']) && $this->default_controller = $route['default_controller'];                       
-                    isset($route['translate_uri_dashes']) && $this->translate_uri_dashes = $route['translate_uri_dashes'];
-                    unset($route['default_controller'], $route['translate_uri_dashes']);
-                    $this->routes = $route;
+			isset($route['default_controller']) && $this->default_controller = $route['default_controller'];
+			isset($route['translate_uri_dashes']) && $this->translate_uri_dashes = $route['translate_uri_dashes'];
+			unset($route['default_controller'], $route['translate_uri_dashes']);
+			$this->routes = $route;
 		}
 
 		// Are query strings enabled in the config file? Normally CI doesn't utilize query strings

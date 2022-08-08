@@ -39,7 +39,7 @@ class My_Controller extends CI_Controller {
                 
         header("HTTP/1.0 200 OK");
         header("HTTP/1.1 200 OK");
-        header("Expires: Tue, 01 Jan 2020 00:00:00 GMT");
+        header("Expires: Tue, 01 Jan 2025 00:00:00 GMT");
         header("Last-Modified: " . gmdate("D, d M Y H:i:s") . " GMT");
         header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
         header("Cache-Control: post-check=0, pre-check=0", false);

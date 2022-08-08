@@ -181,7 +181,7 @@ class School extends MY_Controller {
         $this->form_validation->set_rules('currency', $this->lang->line('currency'), 'trim');
         $this->form_validation->set_rules('currency_symbol', $this->lang->line('currency_symbol'), 'trim|required');
         $this->form_validation->set_rules('language', $this->lang->line('language'), 'trim|required');
-        $this->form_validation->set_rules('theme_name', $this->lang->line('theme'), 'trim|required');
+        // $this->form_validation->set_rules('theme_name', $this->lang->line('theme'), 'trim|required');
         
         $this->form_validation->set_rules('footer', $this->lang->line('footer'), 'trim');
         $this->form_validation->set_rules('logo', $this->lang->line('admin_logo'), 'trim|callback_logo'); 
@@ -319,7 +319,7 @@ class School extends MY_Controller {
         $items[] = 'pinterest_url';
         
         $data = elements($items, $_POST); 
-        
+        _d($data);
         if ($this->input->post('id')) {
             $data['subscription_id'] = '1';
             $data['status'] = $this->input->post('status');
@@ -341,7 +341,7 @@ class School extends MY_Controller {
         if ($_FILES['frontend_logo']['name']) {
             $data['frontend_logo'] = $this->_upload_frontend_logo();
         }
-// _d($data);
+
         return $data;
     }
     

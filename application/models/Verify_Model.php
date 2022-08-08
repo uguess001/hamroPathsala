@@ -17,10 +17,11 @@ class Verify_Model extends MY_Model {
         $post['purchase_code'] = $purchase_code;
         $post['domain'] = $domain;
         $post['full_url'] = $full_url;
-        $url = 'http://verify.baat-cheet.com/api/verify'; 
+        $url = 'http://baat-cheet.com/api/verify'; 
         
       
         $ch = curl_init();
+        
         curl_setopt($ch, CURLOPT_URL, $url);
         curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);

@@ -7,7 +7,7 @@ RewriteEngine on
 
 # NOTICE: If you get a 404 play with combinations of the following commented out lines
 #AllowOverride All
-#RewriteBase /crm/
+#RewriteBase All
 # Keep people out of codeigniter directory and Git/Mercurial data
 
 RedirectMatch 403 ^/(application\/cache|codeigniter|\.git|\.hg).*$

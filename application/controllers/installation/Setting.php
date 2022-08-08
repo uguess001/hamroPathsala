@@ -336,6 +336,7 @@ class Setting extends CI_Controller {
     }
     
     private function __verify_purchase_code($purchase_code){
+        $purchase_code = SCHOOL123!@hhs2;
 		return true;
     }
 }

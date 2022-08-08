@@ -43,8 +43,8 @@
                 </section>
                 <section class="login_content">
                     <div class="col-md-12 col-sm-12 col-xs-12 text-center">
-                        <p class="red" style="color: #fff;"><?php echo $this->session->flashdata('error'); ?></p>
-                        <p class="green" style="color: #fff;"><?php echo $this->session->flashdata('success'); ?></p>
+                        <p class="red"><?php echo $this->session->flashdata('error'); ?></p>
+                        <p class="green"><?php echo $this->session->flashdata('success'); ?></p>
                     </div>
                     <?php echo form_open(site_url('auth/login'), array('name' => 'login', 'id' => 'login'), ''); ?>
                     <div class="col-md-12 col-sm-12 col-xs-12 form-group has-feedback">

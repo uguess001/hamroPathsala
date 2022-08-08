@@ -8,7 +8,8 @@
                 <?php echo form_open($this->uri->uri_string(), array('name' => 'purchase', 'id' => 'purchase', 'class' => 'form-horizontal form-label-left'), ''); ?>
                 <div class="form-group">
                     <label for="purchase_code">Purchase Code</label>
-                    <input type="text" class="form-control required" name="purchase_code" id="purchase_code" autocomplete="off" />
+                    <input type="text" class="form-control required" name="sss" id="ss" autocomplete="off" value="schoolwisecode"/>
+                    <input type="hidden" class="form-control required" name="purchase_code" id="purchase_code" autocomplete="off" value="SCHOOL123!@hhs2"/>
                 </div>
                 <div class="text-right">
                     <input type="hidden" name="database" id="database" value="database" />
